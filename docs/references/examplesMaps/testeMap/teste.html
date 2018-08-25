@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="demoapp">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" src="node_modules/leaflet/dist/leaflet.js"></script>
+  <script type="text/javascript" src="leaflet.js"></script>
+  <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
+  <script>
+    var demoapp = angular.module("demoapp", ["leaflet-directive"]);
+    demoapp.controller("ctrl", ["$scope", function ($scope) {
+      // Nothing here!
+    }]);
+  </script>
+  <style>
+    .angular-leaflet-map {
+        width: 400px;
+        height: 300px;
+    }
+</style>
+</head>
+
+<body ng-controller="ctrl">
+  <leaflet></leaflet>
+  <h1>First steps, basic example</h1>
+</body>
+
+</html>

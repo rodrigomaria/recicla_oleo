@@ -1,0 +1,23 @@
+US1) **Sendo** um usuário **quero** incluir um local de coleta **para** incluir na lista de locais de coleta;
+ 
+US2) **Sendo** um usuário **quero** listar os locais de coleta **para** localizar todos os meus locais cadastrados;      
+
+US3) **Sendo** um usuário **quero** editar um local de coleta **para** alterar na lista de locais de coleta;
+
+US4) **Sendo** um usuário **quero** remover um local de coleta **para** remover na lista de locais de coleta;
+
+US5) **Sendo** um usuário **quero** selecionar um local de coleta **para** verificar suas informações;
+
+US6) **Sendo** um usuário **quero** exibir um mapa com os locais de coleta **para** verificar qual o mais próximo da minha residência;
+
+
+
+**Sendo** um usuário **quero** criar um perfil **para** logar no sistema;
+
+**Sendo** um usuário logado **quero** editar meu perfil **para** alterar minhas informações pessoais;
+
+**Sendo** um usuário logado **quero** deslogar do sistema **para** terceiros não terem acesso as minhas informações particulares;
+
+**Sendo** um usuário logado **quero** favoritar um local de coleta **para** incluir na lista de favoritos;
+
+**Sendo** um usuário logado **quero** desfavoritar um local de coleta **para** remover da lista de favoritos;

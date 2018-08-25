@@ -1,0 +1,33 @@
+<div role="form">
+  <div class="box-body">
+    <field id="idLocal" label="Código" grid="12 6 4" readonly="true"
+      model="localCtrl.local.idLocal"></field>
+    <field id="district" label="Bairro" placeholder="Informe o bairro" 
+      model="localCtrl.local.district" grid="12 6 4" readonly="localCtrl.tabDelete || localCtrl.tabInfo"></field>
+    <field id="local" label="Local" placeholder="Informe o nome do local" 
+      model="localCtrl.local.local" grid="12 6 4" readonly="localCtrl.tabDelete || localCtrl.tabInfo"></field>
+    <field id="address" label="Endereço" placeholder="Informe o endereço" 
+      model="localCtrl.local.address" grid="12 6 4" readonly="localCtrl.tabDelete || localCtrl.tabInfo"></field>
+    <field id="schedule" label="Agenda" placeholder="Informe os dias e horário de atendimento" 
+      model="localCtrl.local.schedule" grid="12 6 4" readonly="localCtrl.tabDelete || localCtrl.tabInfo"></field>
+    <field id="telephone1" label="Telefone 1" placeholder="Informe o telefone 1" 
+      ng-show="localCtrl.local.telephone.tel1 || localCtrl.tabCreate" model="localCtrl.local.telephone.tel1" grid="12 6 4" readonly="localCtrl.tabDelete || localCtrl.tabInfo"></field>
+    <field id="telephone2" label="Telefone 2" placeholder="Informe o telefone 2" 
+      ng-show="localCtrl.local.telephone.tel2 || localCtrl.tabCreate" model="localCtrl.local.telephone.tel2" grid="12 6 4" readonly="localCtrl.tabDelete || localCtrl.tabInfo"></field>
+    <field id="telephone3" label="Telefone 3" placeholder="Informe o telefone 3"
+      ng-show="localCtrl.local.telephone.tel3 || localCtrl.tabCreate" model="localCtrl.local.telephone.tel3" grid="12 6 4" readonly="localCtrl.tabDelete || localCtrl.tabInfo"></field>
+    <field id="latitude" label="Latitude" placeholder="Informe a latitude" 
+      model="localCtrl.local.latitude" grid="12 6 4" readonly="localCtrl.tabDelete || localCtrl.tabInfo"></field>
+    <field id="longitude" label="Longitude" placeholder="Informe a longitude" 
+      model="localCtrl.local.longitude"grid="12 6 4" readonly="localCtrl.tabDelete || localCtrl.tabInfo"></field>
+  </div>
+  <div class="box-footer">
+      <button class="btn btn-primary" ng-click="localCtrl.create()"
+        ng-if="localCtrl.tabCreate">Incluir</button>
+      <button class="btn btn-info" ng-click="localCtrl.update()"
+        ng-if="localCtrl.tabUpdate">Alterar</button>
+      <button class="btn btn-danger" ng-click="localCtrl.delete()"
+        ng-if="localCtrl.tabDelete">Excluir</button>
+      <button class="btn btn-default" ng-click="localCtrl.cancel()">Cancelar</button>
+    </div>
+</div>

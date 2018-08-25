@@ -1,0 +1,70 @@
+<content-header name="Locais" small="Gerenciamento dos locais para descarte de óleo de cozinha usado"></content-header>
+
+<section class="content">
+    <div class="nav-tabs-custom" ng-controller="LocalCtrl as localCtrl">
+      <ul class="nav nav-tabs">
+        <li ng-if="localCtrl.tabList" ng-class="{active: localCtrl.selectedTab == 'tabList'}"
+            ng-click="localCtrl.selectTab('tabList')">
+            <a href data-target="#tabList" data-toggle="tab">
+                <i class="fa fa-bars"></i> Lista
+            </a>
+       </li>
+
+       <li ng-if="localCtrl.tabCreate" ng-class="{active: localCtrl.selectedTab == 'tabCreate'}"
+            ng-click="localCtrl.selectTab('tabCreate')">
+            <a href data-target="#tabCreate" data-toggle="tab">
+                <i class="fa fa-plus"></i> Incluir
+            </a>
+       </li>
+
+       <li ng-if="localCtrl.tabUpdate" ng-class="{active: localCtrl.selectedTab == 'tabUpdate'}"
+            ng-click="localCtrl.selectTab('tabUpdate')">
+            <a href data-target="#tabUpdate" data-toggle="tab">
+                <i class="fa fa-pencil"></i> Alterar
+            </a>
+       </li>
+
+       <li ng-if="localCtrl.tabDelete" ng-class="{active: localCtrl.selectedTab == 'tabDelete'}"
+            ng-click="localCtrl.selectTab('tabDelete')">
+            <a href data-target="#tabDelete" data-toggle="tab">
+                <i class="fa fa-trash-o"></i> Excluir
+            </a>
+        </li>
+
+        <li ng-if="localCtrl.tabInfo" ng-class="{active: localCtrl.selectedTab == 'tabInfo'}"
+            ng-click="localCtrl.selectTab('tabInfo')">
+            <a href data-target="#tabInfo" data-toggle="tab">
+                <i class="fa fa-info-o"></i> Informação
+            </a>
+        </li>    
+       </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane"
+            id="tabList"
+            ng-if="localCtrl.tabList"
+            ng-class="{active: localCtrl.selectedTab == 'tabList'}"
+            ng-include="'local/list.html'"></div>
+        <div class="tab-pane"
+            id="tabCreate"
+            ng-if="localCtrl.tabCreate"
+            ng-class="{active: localCtrl.selectedTab == 'tabCreate'}"
+            ng-include="'local/form.html'"></div>
+        <div class="tab-pane"
+            id="tabUpdate"
+            ng-if="localCtrl.tabUpdate"
+            ng-class="{active: localCtrl.selectedTab == 'tabUpdate'}"
+            ng-include="'local/form.html'"></div>
+        <div class="tab-pane"
+            id="tabDelete"
+            ng-if="localCtrl.tabDelete"
+            ng-class="{active: localCtrl.selectedTab == 'tabDelete'}"
+            ng-include="'local/form.html'"></div>
+        <div class="tab-pane"
+            id="tabInfo"
+            ng-if="localCtrl.tabInfo"
+            ng-class="{active: localCtrl.selectedTab == 'tabInfo'}"
+            ng-include="'local/form.html'"></div>
+      </div>
+    </div>
+</section>

@@ -1,0 +1,30 @@
+<div class="box-body">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Bairro</th>
+        <th>Local</th>
+        <th>Data/Horário</th>
+      </tr>
+    </thead>
+    
+    <div class="box-footer clearfix">
+      <paginator url="/#!/locals" pages="{{ localCtrl.pages }}"></paginator>
+    </div>
+
+    <tbody>
+      <tr ng-repeat="local in localCtrl.locals">
+        <td>{{:: local.idLocal }}</td>
+        <td>{{:: local.district }}</td>
+        <td>{{:: local.local }}</td>
+        <td>{{:: local.schedule }}</td>
+        <td style="width:150px;">
+          <button class="btn btn-info" ng-click="localCtrl.showTabInfo(local)"><i class="fa fa-info"></i></button>
+          <button class="btn btn-warning" ng-click="localCtrl.showTabUpdate(local)"><i class="fa fa-pencil"></i></button>
+          <button class="btn btn-danger" ng-click="localCtrl.showTabDelete(local)"><i class="fa fa-trash-o"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

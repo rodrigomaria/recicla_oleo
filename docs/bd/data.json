@@ -1,0 +1,710 @@
+use DBReciclaOleo
+
+db.locals.insert([
+    {
+    	"idLocal" : 1,
+        "district" : "Belém Novo",
+        "local" : "CRIP Extremo Sul",
+        "address" : "Avenida Desembargador Mello Guimarães, 12",
+        "schedule" : "seg-sex: 08:30-12:00; 13:30-18:00",
+        "telephone" : {
+        	"tel1" : "3289-8406",
+            "tel2" : "3289-8422",
+        	"tel3" : "3247-0939"
+        },
+        "latitude" : -30.210709,
+        "longitude" : -51.188844
+    },
+
+    {
+    	"idLocal" : 2,
+        "district" : "Bom Fim",
+        "local" : "Centro Integrado de Desenvolvimento Ltda.",
+        "address" : "Rua Fernandes Vieira, 553",
+        "schedule" : "seg-sex: 07:15-18:45",
+        "telephone" : {
+        	"tel1" : "3311-2789"
+        },
+        "latitude" :  -30.034107,
+        "longitude" : -51.210449
+    },
+
+    {
+    	"idLocal" : 3,
+        "district" : "Bom Jesus",
+        "local" : "UDC Fátima Pinto",
+        "address" : "Rua Alfredo Ferreira Rodrigues, 975",
+        "schedule" : "seg - sex: 07:30-11:30; 13:00-17:00 sáb: 07:30-11:30",
+        "telephone" : {
+        	"tel1" : "3367-3777"
+        },
+        "latitude" : -30.047300,
+        "longitude" : -51.154824       
+    },
+
+    {
+    	"idLocal" : 4,
+        "district" : "Camaquã",
+        "local" : "Supermercado do Sino",
+        "address" : "Rua Camaquã, 714",
+        "schedule" : "seg-sáb: 07:00-12:00; 14:00-20:00",
+        "telephone" : {
+        	"tel1" : "3249-6933"
+        },
+        "latitude" : -30.105273,
+        "longitude" : -51.237875      
+    },
+
+    {
+    	"idLocal" : 5,
+        "district" : "Camaquã",
+        "local" : "EMEI Jardim Camaquã",
+        "address" : "Rua Jardim das Bromélias, 130",
+        "schedule" : "seg-sex: 10:00-19:00",
+        "telephone" : {
+        	"tel1" : "3241-4986"
+        },
+        "latitude" : -30.111154,
+        "longitude" :  -51.235373       
+    },
+
+    {
+    	"idLocal" : 6,
+        "district" : "Camaquã",
+        "local" : "EMEF Aramy Silva",
+        "address" : "Avenida Chico Pedro, 390",
+        "schedule" : "seg-sex: 07:45-17:15",
+        "telephone" : {
+        	"tel1" : "3241-3382",
+        	"tel2" : "3289-5946",
+        	"tel3" : "3289-5647"
+        },
+        "latitude" : -30.097608,
+        "longitude" : -51.241613       
+    },
+
+    {
+    	"idLocal" : 7,
+        "district" : "Cavalhada",
+        "local" : "Unidade de Saúde Cidade de Deus",
+        "address" : "Rua da Fé, 350",
+        "schedule" : "seg-sex: 08:00-12:00; 13:00-17:00",
+        "telephone" : {
+        	"tel1" : "3248-3477"
+        },
+        "latitude" : -30.115754,
+        "longitude" : -51.228182      
+    },
+
+    {
+    	"idLocal" : 8,
+        "district" : "Cavalhada",
+        "local" : "Capatazia Cavalhada",
+        "address" : "Avenida Otto Niemeyer, 3206",
+        "schedule" : "seg-sex: 07:00-19:00; sáb: 08:00-12:00",
+        "telephone" : {
+        	"tel1" : "3245-5753"
+        },
+        "latitude" : -30.115622,
+        "longitude" : -51.228183       
+    },
+
+    {
+    	"idLocal" : 9,
+        "district" : "Centro",
+        "local" : "Unidade de Serviço da Conceição",
+        "address" : "Rua Alberto Bins, sob a elevada Conceição",
+        "schedule" : "seg-sáb: 08:00-12:00; 13:00-17:00",
+        "telephone" : {
+        	"tel1" : "3226-1950"
+        },
+        "latitude" : -30.027972,
+        "longitude" : -51.219560      
+    },
+
+    {
+    	"idLocal" : 10,
+        "district" : "Centro",
+        "local" : "Faculdade Senac - Porto Alegre",
+        "address" : "Rua Coronel Genuíno, 130",
+        "schedule" : "seg-sex: 08:00-22:00; sáb: 08:00-18:00",
+        "telephone" : {
+        	"tel1" : "3022-9415",
+        	"tel2" : "3022-1044"
+        },
+        "latitude" : -30.035014,
+        "longitude" : -51.226393       
+    },
+
+    {
+    	"idLocal" : 11,
+        "district" : "Centro",
+        "local" : "Centro Aministrativo do Estado Fernando Ferrari - CAFF",
+        "address" : "Avenida Borges de Medeiros, 1501",
+        "schedule" : "seg-sex: 08:30-18:00",
+        "telephone" : {
+        	"tel1" : "3288-1221"
+        },
+        "latitude" : -30.040010,
+        "longitude" : -51.231072       
+    },
+
+    {
+    	"idLocal" : 12,
+        "district" : "Centro",
+        "local" : "Nova Acrópole Porto Alegre",
+        "address" : "Praça Marechal Deodoro, 148",
+        "schedule" : "seg-sex: 10:00-22:0; sáb: 10:00-18:00",
+        "telephone" : {
+        	"tel1" : "3023-4433",
+        	"tel2" : "3026-7177"
+        },
+        "latitude" : -30.032659,
+        "longitude" : -51.229512       
+    },
+
+    {
+    	"idLocal" : 13,
+        "district" : "Centro",
+        "local" : "EMEF Porto Alegre",
+        "address" : "Rua Washington Luis, 203",
+        "schedule" : "seg-sex: 07:30-17:30",
+        "telephone" : {
+        	"tel1" : "3227-4429"
+        },
+        "latitude" : -30.036330,
+        "longitude" : -51.239048      
+    },
+
+    {
+    	"idLocal" : 14,
+        "district" : "Centro",
+        "local" : "DEP - Fábrica de Pré-moldados",
+        "address" : "Avenida Loureiro da Silva, 250",
+        "schedule" : "seg-sex: 08:00-18:00",
+        "telephone" : {
+        	"tel1" : "3289-2280"
+        },
+        "latitude" : -30.036635,
+        "longitude" : -51.238336      
+    },
+
+    {
+    	"idLocal" : 15,
+        "district" : "Cidade Baixa",
+        "local" : "DEP Lima e Silva",
+        "address" : "Rua General Lima e Silva, 972",
+        "schedule" : "seg-sex: 08:30-11:45; 13:30-17:45",
+        "telephone" : {
+        	"tel1" : "3289-2200",
+        	"tel2" : "3289-2231"
+        },
+        "latitude" : -30.040626,
+        "longitude" : -51.218293     
+    },
+
+    {
+    	"idLocal" : 16,
+        "district" : "Cidade Baixa",
+        "local" : "Unidade de Serviço da República",
+        "address" : "Rua da República, 711",
+        "schedule" : "seg-sex: 08:00-18:00; sáb: 08:00-12:00",
+        "telephone" : {
+        	"tel1" : "3212-8071"
+        },
+        "latitude" : -30.040405,
+        "longitude" : -51.226423       
+    },
+
+    {
+    	"idLocal" : 17,
+        "district" : "Cidade Baixa",
+        "local" : "SENAC Informática",
+        "address" : "Avenida Venâncio Aires, 93",
+        "schedule" : "seg-sex: 08:00-21:00",
+        "telephone" : {
+        	"tel1" : "3029-3633",
+        	"tel2" : "3026-4060"
+        },
+        "latitude" : -30.040270,
+        "longitude" : -51.226439      
+    },
+
+    {
+    	"idLocal" : 18,
+        "district" : "Cidade Baixa",
+        "local" : "SESC Redenção",
+        "address" : "Avenida João Pessoa, 835",
+        "schedule" : "seg-sex: 08:00-20:30",
+        "telephone" : {
+        	"tel1" : "3226-0631"
+        },
+        "latitude" : -30.039098,
+        "longitude" : -51.218298      
+    },
+
+    {
+    	"idLocal" : 19,
+        "district" : "Cristal",
+        "local" : "Clube de mães do Cristal",
+        "address" : "Rua Curupaiti, 915",
+        "schedule" : "seg-sex: 14:00-18:30",
+        "telephone" : {
+        	"tel1" : "98637-5203"
+        },
+        "latitude" : -30.086911,
+        "longitude" : -51.239587     
+    },
+
+    {
+    	"idLocal" : 20,
+        "district" : "Cristal",
+        "local" : "UDC Diário de Notícias",
+        "address" : "Avenida Diario de Noticias, 1111",
+        "schedule" : "seg-sex: 08:00-17:00; sáb: 08:00-12:00",
+        "telephone" : {
+        	"tel1" : "3311-4730"
+        },
+        "latitude" : -30.094705,
+        "longitude" : -51.249538      
+    },
+
+    {
+    	"idLocal" : 21,
+        "district" : "Cruzeiro",
+        "local" : "UDC Cruzeiro do Sul",
+        "address" : "Rua Cruzeiro do Sul, 1445",
+        "schedule" : "seg-sex: 08:00-17:00; sáb: 08:00-12:00",
+        "telephone" : {
+        	"tel1" : "3231-6064"
+        },
+        "latitude" : -30.073909,
+        "longitude" : -51.221575      
+    },
+
+    {
+    	"idLocal" : 22,
+        "district" : "Floresta",
+        "local" : "UDC Câncio Gomes",
+        "address" : "Travessa Carmem, 111",
+        "schedule" : "seg-sex: 08:30-12:00; 13:30-17:00",
+        "telephone" : {
+        	"tel1" : "3395-1327",
+        	"tel2" : "3268-8330"
+        },
+        "latitude" : -30.019441,
+        "longitude" : -51.204670       
+    },
+
+    {
+    	"idLocal" : 23,
+        "district" : "Glória",
+        "local" : "UDC Carvalho de Freitas",
+        "address" : "Rua Carvalho de Freitas, 1012",
+        "schedule" : "seg-sex: 08:00-17:00; sáb: 08:00-12:00",
+        "telephone" : {
+        	"tel1" : "3322-0340"
+        },
+        "latitude" : -30.079603,
+        "longitude" : -51.201818     
+    },
+
+    {
+    	"idLocal" : 24,
+        "district" : "Hípica",
+        "local" : "EMEF Prof. Anísio Teixeira",
+        "address" : "Rua Francisco Mattos Terres, 40",
+        "schedule" : "seg-sex: 08:00-12:00; 13:10-17:10",
+        "telephone" : {
+        	"tel1" : "3264-1540",
+        	"tel2" : "3289-5980"
+        },
+        "latitude" : -30.159574,
+        "longitude" : -51.200343      
+    },
+
+    {
+    	"idLocal" : 25,
+        "district" : "Hípica",
+        "local" : "CRAS - Centro de Referência de Assistência Social da Hípica",
+        "address" : "Rua Geraldo Tollens Linck, 235",
+        "schedule" : "seg-sex: 08:00-12:00; 13:00-17:00",
+        "telephone" : {
+        	"tel1" : "3268-3163"
+        },
+        "latitude" : -30.158552,
+        "longitude" : -51.175801      
+    },
+
+    {
+    	"idLocal" : 26,
+        "district" : "Humaitá",
+        "local" : "UDC Humaitá",
+        "address" : "Avenida José Aloisio Filho, 780",
+        "schedule" : "seg-sáb: 07:30-17:00",
+        "telephone" : {
+        	"tel1" : "3325-3160"
+        },
+        "latitude" : -29.981446,
+        "longitude" : -51.185392      
+    },
+
+    {
+    	"idLocal" : 27,
+        "district" : "IAPI",
+        "local" : "Unidade de Serviço IAPI - Seção Norte",
+        "address" : "Avenida Assis Brasil, 1715",
+        "schedule" : "seg-sex: 08:00-19:00",
+        "telephone" : {
+        	"tel1" : "3342-6121",
+        	"tel2" : "3325-2890"
+        },
+        "latitude" : -30.011110,
+        "longitude" : -51.170314      
+    },
+
+    {
+    	"idLocal" : 28,
+        "district" : "Ipanema",
+        "local" : "Unidade de Serviço Ipanema",
+        "address" : "Avenida Guaíba, 2027",
+        "schedule" : "seg-sex: 08:00-12:00; 13:00-16:00; sáb: 08:00-12:00",
+        "telephone" : {
+        	"tel1" : "3248-1725"
+        },
+        "latitude" : -30.147457,
+        "longitude" : -51.224827      
+    },
+
+    {
+    	"idLocal" : 29,
+        "district" : "Ipanema",
+        "local" : "EEEF Monte Líbano",
+        "address" : "Rua Lemuria, 10",
+        "schedule" : "seg-sex: 07:45-12:00; 13:15-17:15",
+        "telephone" : {
+        	"tel1" : "3246-9874"
+        },
+        "latitude" : -30.129731,
+        "longitude" : -51.227445      
+    },
+
+    {
+    	"idLocal" : 30,
+        "district" : "Jardim Botânico",
+        "local" : "Anchieta Comercial de Combustíveis Ltda.",
+        "address" : "Rua Doutor Salvador França, 981",
+        "schedule" : "seg-sex: 07:00-21:00",
+        "telephone" : {
+        	"tel1" : "3319-9702"
+        },
+        "latitude" : -30.054566,
+        "longitude" : -51.182054      
+    },
+
+    {
+    	"idLocal" : 31,
+        "district" : "Jardim Itú Sabará",
+        "local" : "EMEI Vale Verde",
+        "address" : "Beco Franklin, 270",
+        "schedule" : "seg-sex: 07:00-19:00",
+        "telephone" : {
+        	"tel1" : "3386-2044"
+        },
+        "latitude" : -30.040443,
+        "longitude" : -51.142996      
+    },
+
+    {
+    	"idLocal" : 32,
+        "district" : "Jardim Itú Sabará",
+        "local" : "EMEF Profº Luiz Francisco Lucena Borges",
+        "address" : "Rua Cláudio Manuel da Costa, 270",
+        "schedule" : "seg-sex: 08:00-12:00; 13:30-17:30",
+        "telephone" : {
+        	"tel1" : "3338-3350",
+        	"tel2" : "3289-5875"
+        },
+        "latitude" : -30.034222,
+        "longitude" : -51.145679      
+    },
+
+    {
+    	"idLocal" : 33,
+        "district" : "Mário Quintana",
+        "local" : "EMEF Chico Mendes",
+        "address" : "Rua Gentil Amâncio Clemente, 01",
+        "schedule" : "seg-sex: 08:00-12:00; 13:20-17:20; 19:00-22:30",
+        "telephone" : {
+        	"tel1" : "3387-6400",
+        	"tel2" : "3289-5836",
+        	"tel3" : "3289-5837"
+        },
+        "latitude" : -30.033443,
+        "longitude" : -51.112642      
+    },
+
+    {
+    	"idLocal" : 34,
+        "district" : "Mário Quintana",
+        "local" : "EMEF Timbaúva",
+        "address" : "Rua Seis, s/nº",
+        "schedule" : "seg-sex: 08:00-12:00; 13:00-17:30",
+        "telephone" : {
+        	"tel1" : "3368-5355"
+        },
+        "latitude" : -30.021700,
+        "longitude" : -51.095322      
+    },
+
+    {
+    	"idLocal" : 35,
+        "district" : "Medianeira",
+        "local" : "Unidade de Serviço Niterói",
+        "address" : "Avenida Niterói, 19",
+        "schedule" : "seg-sáb: 07:00-19:00",
+        "telephone" : {
+        	"tel1" : "3217-9257"
+        },
+        "latitude" : -30.068673,
+        "longitude" : -51.212791       
+    },
+
+    {
+    	"idLocal" : 36,
+        "district" : "Menino Deus",
+        "local" : "Ginásio Tesourinha",
+        "address" : "Rua Érico Veríssimo s/nº",
+        "schedule" : "seg-sex: 08:30-22:00",
+        "telephone" : {
+        	"tel1" : "3228-1410",
+        	"tel2" : "3289-8303"
+        },
+        "latitude" : -30.045460,
+        "longitude" : -51.219741      
+    },
+
+    {
+    	"idLocal" : 37,
+        "district" : "Menino Deus",
+        "local" : "Parque Marinha do Brasil (prédio administrativo)",
+        "address" : "Avenida Borges de Medeiros, 2035",
+        "schedule" : "seg-sex: 08:00 - 17:00",
+        "telephone" : {
+        	"tel1" : "3289-7585"
+        },
+        "latitude" : -30.049892,
+        "longitude" : -51.229786      
+    },
+
+    {
+    	"idLocal" : 38,
+        "district" : "Navegantes",
+        "local" : "Ponto das Padarias",
+        "address" : "Avenida Sertório, 1105",
+        "schedule" : "seg-sex: 07:00-17:00",
+        "telephone" : {
+        	"tel1" : "3342-2266"
+        },
+        "latitude" : -30.001186,
+        "longitude" : -51.194533      
+    },
+
+    {
+    	"idLocal" : 39,
+        "district" : "Partenon",
+        "local" : "UDC Tenente Alpoin",
+        "address" : "Rua Coronel José Rodrigues Sobral, 958",
+        "schedule" : "seg-sex: 08:00-17:00",
+        "telephone" : {
+        	"tel1" : "3354-6248"
+        },
+        "latitude" : -30.068056,
+        "longitude" : -51.177127      
+    },
+
+    {
+    	"idLocal" : 40,
+        "district" : "Partenon",
+        "local" : "EMEF Dep. Marcírio Goulart Loureiro",
+        "address" : "Rua Saibreira, 01",
+        "schedule" : "seg-sex: 07:30-11:30; 13:30-17:00",
+        "telephone" : {
+        	"tel1" : "3315-6069"
+        },
+        "latitude" : -30.076680,
+        "longitude" : -51.173567      
+    },
+
+    {
+    	"idLocal" : 41,
+        "district" : "Passo D'Areia",
+        "local" : "Instituto Vicente Pallotti",
+        "address" : "Rua Tupi, 212",
+        "schedule" : "seg-sex: 07:30- 17:30",
+        "telephone" : {
+        	"tel1" : "3341-7688"
+        },
+        "latitude" : -30.010100,
+        "longitude" : -51.169609      
+    },
+
+    {
+    	"idLocal" : 42,
+        "district" : "Passo das Pedras",
+        "local" : "EMEI Érico Veríssimo",
+        "address" : "Rua Modesto Franco, 100",
+        "schedule" : "seg-sex: 07:00-19:00",
+        "telephone" : {
+        	"tel1" : "3348-1408",
+        	"tel2" : "3289-5870",
+        	"tel3" : "3289-5871"
+        },
+        "latitude" : -30.014442,
+        "longitude" : -51.128100      
+    },
+
+    {
+    	"idLocal" : 43,
+        "district" : "Restinga",
+        "local" : "Unidade de Serviço Restinga",
+        "address" : "Rua Rubens Pereira Torelly, 50",
+        "schedule" : "seg-sex: 07:30-19:00",
+        "telephone" : {
+        	"tel1" : "3250-1952"
+        },
+        "latitude" : -30.151759,
+        "longitude" : -51.144794      
+    },
+
+    {
+    	"idLocal" : 44,
+        "district" : "Restinga Velha",
+        "local" : "EMEI Paulo Freire",
+        "address" : "Avenida Meridional, s/nº",
+        "schedule" : "seg-sex: 07:00-19:00",
+        "telephone" : {
+        	"tel1" : "3250-2430"
+        },
+        "latitude" : -30.155606,
+        "longitude" : -51.138161      
+    },
+
+    {
+    	"idLocal" : 45,
+        "district" : "Rubem Berta",
+        "local" : "Instituição de Educação Infantil Madre Teresa",
+        "address" : "Rua Wolfran Metzler, 605",
+        "schedule" : "seg-sex: 07:00-18:00",
+        "telephone" : {
+        	"tel1" : "3366-3177"
+        },
+        "latitude" : -30.024568,
+        "longitude" : -51.103210      
+    },
+
+    {
+    	"idLocal" : 46,
+        "district" : "Rubem Berta",
+        "local" : "UDC Bernardino Silveira de Amorim",
+        "address" : "Avenida Bernardino Silveira Amorim, 2261",
+        "schedule" : "seg-sex: 08:00-17:00; sáb 08:00-12:00",
+        "telephone" : {
+        	"tel1" : "3386-2155"
+        },
+        "latitude" : -30.000270,
+        "longitude" : -51.106272      
+    },
+
+    {
+    	"idLocal" : 47,
+        "district" : "Santa Cecília",
+        "local" : "Unidade de Serviço Silva Só",
+        "address" : "Avenida Silva Só, sob a elevada Tiradentes",
+        "schedule" : "seg-sex: 08:00-18:00; sáb: 08:00-12:00",
+        "telephone" : {
+        	"tel1" : "3331-4519"
+        },
+        "latitude" : -30.038350,
+        "longitude" : -51.204236      
+    },
+
+    {
+    	"idLocal" : 48,
+        "district" : "Santana",
+        "local" : "Academia Alternativa",
+        "address" : "Rua São Luiz, 444",
+        "schedule" : "seg-sex: 06:30-23:00; sáb: 09:00-16:00; dom: 16:00-19:00",
+        "telephone" : {
+        	"tel1" : "3061-2966"
+        },
+        "latitude" : -30.046929,
+        "longitude" : -51.204786      
+    },
+
+    {
+    	"idLocal" : 49,
+        "district" : "Sarandi",
+        "local" : "Seção Nordeste",
+        "address" : "Rua Dom Jaime de Barros Câmara, 815",
+        "schedule" : "seg-sex: 08:00-17:00",
+        "telephone" : {
+        	"tel1" : "3365-4053",
+        	"tel2" : "3365-4059"
+        },
+        "latitude" : -30.002873,
+        "longitude" : -51.129669       
+    },
+
+    {
+    	"idLocal" : 50,
+        "district" : "Sarandi",
+        "local" : "Escola Adventista de Ensino Fundamental de Sarandi",
+        "address" : "Rua Passos Figueroa, 841",
+        "schedule" : "seg-qui: 07:30-12:00; 13:15-17:30; sex: 07:30-12:00; 13:15-16:30",
+        "telephone" : {
+        	"tel1" : "3364-7979"
+        },
+        "latitude" : -29.991447,
+        "longitude" : -51.132920      
+    },
+
+    {
+    	"idLocal" : 51,
+        "district" : "Tristeza",
+        "local" : "E.E.E.F. Osório Duque Estrada",
+        "address" : "Rua Cidade de Natal, 125",
+        "schedule" : "seg-sex: 08:00-12:00; 13:30-17:30",
+        "telephone" : {
+        	"tel1" : "3268-3593"
+        },
+        "latitude" : -30.101344,
+        "longitude" : -51.246151      
+    },
+
+    {
+    	"idLocal" : 52,
+        "district" : "Vila Ipiranga",
+        "local" : "Colégio Adventista Marechal Rondon",
+        "address" : "Rua Mali, 255",
+        "schedule" : "seg-qui: 07:30-17:30; sex: 07:30-16:30",
+        "telephone" : {
+        	"tel1" : "3349-6600"
+        },
+        "latitude" : -30.013121,
+        "longitude" : -51.149024      
+    },
+
+    {
+    	"idLocal" : 53,
+        "district" : "Vila Nova",
+        "local" : "Escola Municipal Vila Monte Cristo",
+        "address" : "Rua Carlos Superti, 84",
+        "schedule" : "seg-sex: 07:30-11:30; 13:30-17:00; 18:30-21:00",
+        "telephone" : {
+        	"tel1" : "3246-4659"
+        },
+        "latitude" : -30.122288,
+        "longitude" : -51.217668      
+    }
+])
